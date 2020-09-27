@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<title>Alankrit Vyas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+a {text-decoration: none;}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color:black;
+  margin-top: 2%;
+ margin-right: 75%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="WEB DEV/image/Me.jpg" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Alankrit Vyas.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="WEB DEV/image/Me.jpg" alt="boy" class="w3-image" width="500" height="500">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Alankrit Vyas</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hey everyone, this is Alankrit Vyas. 
+        I am currently pursuing computer and communication engineering in Bacherlors degree at Manipal University Jaipur. 
+        I love to click photographs a lot even though i am not a professional nor i have a "DSLR" camera but i still click because i just like to do so. 
+        Besides clicking photos i love drawing sketches like something sci-fi or a scenery.
+        Instrumental songs are my jam i like only those, it's not that i don't like lyrical bit i prefer Instrumental than lyrical.
+    </p>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div>
+    <p class="w3-wide">C++</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">C</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">MySQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Java</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div><br>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section ">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Secondary</span><br>
+          Smt.Sulochanadevi Singhania School
+          <br>
+          Student Batch:2005-2017
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">High School</span><br>
+          New Horizon Scholars School
+          <br>
+          Science Stream
+          <br>
+          Student Batch:2017-2019
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Under Graduate</span><br>
+          Manipal University Jaipur
+          <br>
+          Student Batch: 2019-2023
+          <br>
+          Current Sem: III
+        </div>
+        
+      </div>
+
+    <button class="w3-button  w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+   
+
+    
+    <h3 class="w3-padding-24 w3-text-light-grey">My Projects</h3>  
+    <div class="card">
+      <img src="WEB DEV/image/ss.png"  style="width:100%" height="220">
+      <h1>Weather</h1>
+     <a  href="https://alankritvyas.me/alankritvyas21.github.io-weather/">Go to site</a>
+      <br>
+      <br>
+      </div>
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="WEB DEV/image/Candle.jpeg" style="width:100%">
+       
+     
+      </div>
+
+      <div class="w3-half">
+        <img src="WEB DEV/image/Nahargarh.jpg" style="width:100%">
+        
+      
+      </div>
+      <button class="w3-button  w3-padding-large w3-section">
+        <i class="fa fa-photo"></i><a href="photo.html"> View More</a>
+      </button>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+<br>
+    <a href="mailto:av3h.vyas@gmail.com " class="fa fa-envelope w3-xxlarge w3-margin-right w3-hover-opacity "></a>
+    <a href="https://www.facebook.com/profile.php?id=100007428494855" class="fa fa-facebook-official w3-margin-right w3-xxlarge w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/i_alanvyas/" class="fa fa-instagram w3-xxlarge w3-margin-right w3-hover-opacity"></a>
+    <a href="https://twitter.com/AlankritVyas" class="fa fa-twitter w3-xxlarge w3-margin-right w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/alankrit-vyas-667063190/" class="fa fa-linkedin w3-xxlarge w3-margin-right w3-hover-opacity"></a>
+   
+    </div>
+
+    
+ 
+  
+  
+   
+  
+    <footer class="w3-large w3-center w3-margin-right ">
+      <p>Copyright (c) 2020 Alankrit Vyas</p>
+    </footer>
+  <!-- End footer -->
+ 
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
