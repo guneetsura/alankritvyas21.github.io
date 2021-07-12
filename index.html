@@ -1,301 +1,309 @@
-<!DOCTYPE html>
-<html>
-<title>Alankrit Vyas</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!doctype html>
+<html lang="en">
+  <head></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alankrit Vyas</title>
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-a {text-decoration: none;}
-
-html{
-  scroll-behavior: smooth;
-}
+  </head>
   
-
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  
-  background-color: black;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-
-.r{
-  margin-right: 2%;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 31%;
-  padding: 0 10px;
-  
-}
-.mgs{
-  margin-left: 3%;
-}
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: black;
-}
-
-</style>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="image/logo.png" style="width:100%">
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-photo w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-music w3-xxlarge"></i>
-    <p>PLAYLIST</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#music" class="w3-bar-item w3-button" style="width:25% !important">Playlist</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Alankrit Vyas.</h1>
-    <p>Photographer and Web Designer.</p>
-    <img src="image/Me.jpg" alt="boy" class="w3-image" width="500" height="500">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Alankrit Vyas</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hey everyone, this is Alankrit Vyas. 
-        I am currently pursuing computer and communication engineering in Bacherlors degree at Manipal University Jaipur. 
-        I love to click photographs a lot even though i am not a professional nor i have a "DSLR" camera but i still click because i just like to do so. 
-        Besides clicking photos i love drawing sketches like something sci-fi or a scenery.
-        Instrumental songs are my jam i like only those, it's not that i don't like lyrical bit i prefer Instrumental than lyrical.
-    </p>
-    
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
-    </div>
-    <p class="w3-wide">C++</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">C</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">MySQL</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Java</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
-    </div><br>
-    
-    <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
-    <div class="w3-row w3-center w3-padding-16 w3-section ">
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Secondary</span><br>
-          Smt.Sulochanadevi Singhania School
-          <br>
-          Student Batch:2005-2017
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">High School</span><br>
-          New Horizon Scholars School
-          <br>
-          Science Stream
-          <br>
-          Student Batch:2017-2019
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Under Graduate</span><br>
-          Manipal University Jaipur
-          <br>
-          Student Batch: 2019-2023
-          <br>
-          Current Sem: III
-        </div>
-        
-      </div>
-
-   
-    
-   
-
-    
-    <h3 class="w3-padding-24 w3-text-light-grey">My Projects</h3>  
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="image/ss.png" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media">
-          <p>Weather</p>
-          <p><a href="https://alankritvyas.me/alankritvyas21.github.io-weather/" >Go to site</a></p>
-        </div>
-      </div>
-    
-      <div class="column">
-        <div class="card">
-          <img src="image/desunchlogos.png" class="mgs" width="250" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media">
-          
-          <p>Gaming Blog</p>
-          <p><a href="https://desynchronized21.github.io/" >Go to site</a></p>
-        </div>
-      </div>
-   
-    </div>
-  
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="image/Candle.jpeg" style="width:100%">
-       
-     
-      </div>
-
-      <div class="w3-half">
-        <img src="image/nahargarh.jpeg" style="width:100%">
-        
-      
-      </div>
-      <button class="w3-button  w3-padding-large w3-section">
-        <i class="fa fa-photo"></i><a href="photo.html"> View More</a>
+  <body>
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="#index.html">
+        <img src="logo av.png"   style="height:60px;" />
+    </a>
+      <a class="navbar-brand" href="index.html"> My Portfolio</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
       </button>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-<div class=" w3-padding-64 w3-content w3-text-grey " id="music">
-  <h2 class="w3-text-light-grey">My Top 5</h2>
-  <hr style="width:200px" class="w3-opacity">
-  <h3 class="w3-padding-24 w3-text-light-grey">Assassin's Creed</h3>  
-    <iframe class="r" src="https://open.spotify.com/embed/track/3ATBKK03AP6mRqd4sUVvHW" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe class="r" src="https://open.spotify.com/embed/track/20cl2GKkPPFb6bbXcXjnwv" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe class="r" src="https://open.spotify.com/embed/track/0QI1IQbCigfH2kkSdNfvpO" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe class="r" src="https://open.spotify.com/embed/track/5wNLSF0W0NZyu9eRpufdqn" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe class="r" src="https://open.spotify.com/embed/track/4m5gJuQlo2byPHRQamL6dd" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <button class="w3-button  w3-padding-large w3-section">
-      <i class="fa fa-spotify"></i><a href="spotify:playlist:7fYETaUvdphuCp8noDizir"> Full Playlist</a>
-    </button>
-   
-  </div>
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-<br>
-    <a href="mailto:av3h.vyas@gmail.com " class="fa fa-envelope w3-xxlarge w3-margin-right w3-hover-opacity "></a>
-    <a href="https://www.facebook.com/profile.php?id=100007428494855" class="fa fa-facebook-official w3-margin-right w3-xxlarge w3-hover-opacity"></a>
-    <a href="https://www.instagram.com/i_alanvyas/" class="fa fa-instagram w3-xxlarge w3-margin-right w3-hover-opacity"></a>
-    <a href="https://twitter.com/AlankritVyas" class="fa fa-twitter w3-xxlarge w3-margin-right w3-hover-opacity"></a>
-    <a href="https://www.linkedin.com/in/alankrit-vyas-667063190/" class="fa fa-linkedin w3-xxlarge w3-margin-right w3-hover-opacity"></a>
-    
-    </div>
 
-    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
  
-  
-  
-   
-  
-    <footer class="w3-large w3-center w3-margin-right ">
-      <p>Copyright (c) 2020 Alankrit Vyas</p>
-    </footer>
-  <!-- End footer -->
- 
+ <section class="w3l-main-banner" id="home">
+  <div class="companies20-content">
+    <div class="companies-wrapper">
+        <div class="item">
+         
+            <div class="slider-info banner-view text-center">
+              <div class="banner-info container">
+                <img src="assets/images/AV@.jpeg"  class="img-fluid">
+                <h3 class="banner-text mt-5">Alankrit Vyas
+                  </h3>
+                  <p class="my-4 mb-5">Web Developer <br> and <br> App Developer</p>
+                  
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
 
-<!-- END PAGE CONTENT -->
+<section class="w3l-about " id="about">
+<div class="skills-bars py-5">
+ <div class="container py-md-3">
+  <div class="heading text-center mx-auto">
+    <h3 class="head">Welcome To My Portfolio</h3>
+    <p class="my-3 head">Hello there. My name is Alankrit Vyas and I am currently pursuing computer and communication engineering in Bachelors degree at 
+      Manipal University Jaipur. 
+      I have been working on web development recently and I am having quite fun doing it. 
+      Besides Web dev, I like photography a lot though not at a professional level. 
+      Instrumental music intrigues me a lot and I prefer it above lyrical ones. 
+      To become a great coder is my dream and I have started my path towards it.
+  </p>
+      <br>
+      <br>
+    </div>
+    <div class="heading text-center mx-auto">
+      <h3 class="head">Skills</h3>
+<div class="row mt-5 pt-3">
+    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Web Dev</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
 </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>C++</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>Photography</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 60% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>C</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>Java</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 70% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
+    <h4>MySQL</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+</div>
+ </div>
+ </div>
+</div>
+ </section>
+<section class="w3l-feature-3" id="features">
+	<div class="grid top-bottom">
+		<div class="container">
+			<div class="heading text-center mx-auto">
+                <h3 class="head text-white">Education</h3>
+                
+              </div>
+			<div class="middle-section grid-column text-center mt-5 pt-3">
+				<div class="three-grids-columns">
+          <i class='fas fa-b' style='font-size:36px'></i>
+					<h4>Secondary</h4>
+					<p>Smt.Sulochanadevi Singhania School</p>
+					<p>Batch: 2005-2017</p>
+				</div>
+				<div class="three-grids-columns">
+					<h4>High School</h4>
+					<p>New Horizon Scholars School</p>
+          <p>Batch: 2017-2019</p>
+					
+				</div>
+				<div class="three-grids-columns">	
+					<h4>Under Graduate</h4>
+					<p>Manipal University Jaipur</p>
+          <p>Batch: 2019-2023</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="w3l-testimonials" id="testimonials">
+  <div class="customers-6-content py-5">
+    <div class="container py-lg-3">
+      <div class="heading text-center mx-auto">
+        <h3 class="head">My Projects</h3>
+        
+      </div>
+     
+      <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
+
+        
+        <!-- Carousel items -->
+        <!--<div class="carousel-inner pb-5">
+
+          <div class="carousel-item active">
+            <div class="customer row py-5 mt-3">
+              
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <h3 class="card-title mt-2" style="text-align: center;">Weather</h3>
+                    <br>
+                    <br>
+                    <p class="sub-title mb-3" style="text-align: center;">Go to site</p>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="col-lg-4 col-md-6 off-testi-2">
+                <div class="card">
+                
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/desunchlogos.png" alt="">
+                    <h3 class="card-title mt-2" style="text-align: center;">Desynchronized</h3>
+                    <br>
+                    <br>
+                    <p class="sub-title mb-3" style="text-align: center;"><a href="https://desynchronized21.github.io/">Go to site</a></p>
+                    <p class="card-text"></p>                 
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi-2">
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
+                    <h3 class="card-title mt-2" style="text-align: center;">E-Commerce</h3>
+                    <br>
+                    <br>
+                    <p class="sub-title mb-3" style="text-align: center;">Coming soon</p>
+                    <p class="card-text"></p>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!--.item-->
+
+           
+
+        </div>
+        <!--.carousel-inner-->
+      </div>
+    </div>
+  </div>
+  <!--//customers -->
+</section>
+
+
+
+ <section class="w3l-footer-29-main" id="contact">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+          <a href="mailto:av3h.vyas@gmail.com" class="google-plus"><span class="fa fa-google-plus"></span></a>    
+          <a href="https://www.instagram.com/i_alanvyas/" class="instagram"><span class="fa fa-instagram"></span></a>
+          <a href="https://www.linkedin.com/in/alankrit-vyas-667063190/" class="linkedin"><span class="fa fa-linkedin"></span></a>
+          <a href="https://www.facebook.com/profile.php?id=100007428494855" class="facebook"><span class="fa fa-facebook"></span></a>
+          <a href="https://twitter.com/AlankritVyas" class="twitter"><span class="fa fa-twitter"></span></a>
+          <a href="https://github.com/alankritvyas21" class="github"><span class="fa fa-github"></span></a>
+      </div>
+          <div class="bottom-copies text-center">
+              <p class="copy-footer-29">Alankrit Vyas © 2021 Portfolio Website</a></p>
+               
+          </div>
+      </div>
+  </div>
+   <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+              <span class="fa fa-angle-up"></span>
+                 </button>
+                 <script>
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                         scrollFunction()
+                     };
+              
+                     function scrollFunction() {
+                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                             document.getElementById("movetop").style.display = "block";
+                         } else {
+                             document.getElementById("movetop").style.display = "none";
+                         }
+                     }
+              
+                     // When the user clicks on the button, scroll to the top of the document
+                     function topFunction() {
+                         document.body.scrollTop = 0;
+                         document.documentElement.scrollTop = 0;
+                     }
+                 </script>
+                 <!-- /move top -->
+</section>
+<!-- // grids block 5 -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //footer-28 block -->
+</section>
+
+<script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Smooth scrolling -->
+
+
 
 </body>
+
 </html>
+<!-- // grids block 5 -->
