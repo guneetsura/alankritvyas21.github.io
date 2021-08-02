@@ -2310,12 +2310,7 @@
   overflow: visible;
   clip: auto; }
 
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10151,7 +10146,7 @@ h4.sub-title {
   margin-bottom: 10px; }
 
 .about .bg-color {
-  background: linear-gradient(to right, #35a22c 0%, #0ea8cf 100%); }
+  background: green; }
 
 .feature-3 
   .feature-3 span.number img {
@@ -10287,6 +10282,16 @@ h4.sub-title {
           font-size: 16px;
           line-height: 24px;
           color: var(--white-color); }
+          .feature-31 .three-grids-columns a {
+            padding-top: 15px;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--white-color); }
+            .feature-31 .three-grids-columns a:hover {
+              padding-top: 15px;
+              font-size: 16px;
+              line-height: 24px;
+              color: royalblue }
         .feature-31 .three-grids-columns span.fa {
           font-size: 48px;
           color: var(--opposite-color); }
